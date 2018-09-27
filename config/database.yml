@@ -27,7 +27,6 @@ test:
 
 production:
   <<: *default
-  # database: gene_idea_server_db
   adapter: postgresql
   encoding: unicode
   pool: 5

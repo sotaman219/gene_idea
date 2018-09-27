@@ -15,10 +15,12 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+
 
 # 本番ではpostgressを使用する
-gem 'pg', group: :production
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -29,6 +31,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'mysql2', '>= 0.3.18', '< 0.5'
   gem 'faker'
 end
 
