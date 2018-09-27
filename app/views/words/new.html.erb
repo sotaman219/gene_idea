@@ -1,0 +1,11 @@
+<%= form_for post, html: {class: "form_post"} do |f| %>
+  <div class="tab-content">
+    <%= f.hidden_field :post_type %>
+    <br>
+    <div id="word" class="tab-pane tab-joke fade">Content
+      <%= f.text_area :content, placeholder: "Nội dung...", rows: '5', class: "form-control" %>
+    </div>
+    <br>
+    <%= f.submit "register", class: "btn  btn-success" %>
+  </div>
+<% end %>　
