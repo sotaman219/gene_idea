@@ -14,7 +14,4 @@
 //= require rails-ujs
 //= require bootstrap
 //= require turbolinks
-//= require common
-//= require post
 //= require cable
-//= require notification
