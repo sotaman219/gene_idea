@@ -1,0 +1,30 @@
+<div class="container main-content-left" id="show-profile">
+  <div class="header-page">
+    <h3>Profile</h3>
+    <hr>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row form-group field">
+      <label class="col-lg-3 control-label">Email:</label>
+      <div class="col-lg-8">
+        <%= current_user.email %>
+      </div>
+    </div>
+
+    <div class="row form-group field">
+      <label class="col-lg-3 control-label">Username:</label>
+      <div class="col-lg-9">
+        <%=  current_user.username %>
+      </div>
+    </div>
+    <br>
+
+    <div class="row form-group field">
+      <label class="control-label"></label>
+      <div class="col-lg-5">
+        <%= link_to "Edit Profile", edit_user_path(current_user.id), class: "btn btn-info", type: "edit"  %>
+      </div>
+    </div>
+  </div>
+</div>
